@@ -1,0 +1,120 @@
+.avatar__wrap {
+    margin: 0 auto;
+}
+
+.avatar__circle {}
+
+.avatar {
+    margin: 0 auto;
+}
+
+.title__wrap {
+    text-align: center;
+}
+
+.title__name {
+    line-height: 0.5em;
+}
+
+.title__location {
+    font-weight: 400;
+    font-size: 0.62em;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.follow-box__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5%;
+}
+
+.follow-box {
+    padding-top: 0.7em;
+
+}
+
+.follow-box__title {
+    font-size: 0.62em;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.follow-box__number {
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.favorite-genres__wrap {
+    margin-bottom: 10%;
+}
+
+.favorite-genres__title {}
+
+.favorite-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+
+}
+
+.books-box {}
+
+.books-type-title {
+    display: flex;
+    align-content: center;
+}
+
+.books-count-num {
+    font-size: 0.75em;
+    color: #53889D;
+}
+
+.books-wrapper {
+    display: inline-block;
+    width: 100%;
+    min-height: 5rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.books-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.book {
+    display: inline-block;
+}
+
+.link__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    font-weight: 600;
+    font-size: 0.75em;
+    text-align: center;
+    color: #D96F6E;
+    text-decoration: underline;
+    padding-right: 0.4em;
+}
+
+.link__arrow {}
+
+.book__empty {}
+
+h6 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 1.5em 1em;
+}
