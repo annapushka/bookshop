@@ -31,6 +31,14 @@ h3 {
     font-size: 1.25em;
 }
 
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: #333333;
+}
+
 
 @media screen and (min-width: 480px) and (max-width: 768px) {}
 
@@ -58,4 +66,37 @@ img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.genre {
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75em;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #333333;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.55em 1.3em;
+}
+
+.genre_blue-baby {
+    background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
+}
+
+.genre_pink-blush {
+    background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
+}
+
+.genre_yellow-pink {
+    background: linear-gradient(90deg, #F2D05C 0%, #F3A492 100%);
+}
+
+.genre_baby-yellow {
+    background: linear-gradient(90deg, #BBD1D9 0%, #F2D05C 92.86%);
+}
+
+.genre_blush-yellow {
+    background: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
 }
