@@ -1,0 +1,49 @@
+* {
+    border: 1px solid black;
+}
+
+/*greeting*/
+.title{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100vw;
+    
+
+}
+.title__text {
+    font-weight: 400;
+}
+
+/*lists of the books*/
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+
+    /*   color: #ffffff; */
+    color: black;
+}
+
+.list__title {
+    /* color: #ffffff; */
+    color: black;
+}
+
+.list-1 {
+    background-color: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
+    background-image: url("../images/home-page/Vector.svg");
+}
+
+/*top 10 most popular authors*/
+
+
+/*latest arrivals*/
+
+.book__title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #333333;
+}
+
