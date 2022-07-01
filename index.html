@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/normalize.css">
+    <link rel="stylesheet" href="./assets/style/overall-style.css">
+    <link rel="stylesheet" href="./assets/style/home-page.css">
     <title>Home Page</title>
 </head>
 
@@ -14,7 +17,7 @@
     <main>
         <!--greeting-->
         <div class="title">
-            <h1 class="title__greeting">Welcome back, <br> Jessica!</h1>
+            <h1 class="title__greeting">Welcome back, Jessica!</h1>
             <p class="title__text">We’re glad to see you just <span>16 days</span> after your last visit and can’t wait
                 to
                 help you find your next page turner!</p>
@@ -26,14 +29,13 @@
                 <h3>Popular Lists</h3>
             </div>
             <div class="list-wrapper">
-                <div class="list-1">
+                <div class="list-card list-card_1">
                     <img src="./assets/images/home-page/icons/twemoji-soft-ice-cream.svg" alt="ice-cream"
                         class="list-1__icon">
                     <h6>Top 10</h6>
-                    <h3 class="list-1__title">Summer Fiction</h3>
-
+                    <h3 class="list__title">Summer Fiction</h3>
                 </div>
-                <div class="list-2">
+                <div class="list-card list-card_2">
                     <img src="./assets/images/home-page/icons/twemoji-party-popper.svg" alt="party-popper"
                         class="list-2__icon list-2__icon_left">
                     <p class="list-2__title list-2__title_top">25</p>
@@ -41,6 +43,17 @@
                     <p class="list-2__title list-2__title_bottom">25</p>
                     <img src="./assets/images/home-page/icons/twemoji-party-popper.svg" alt="party-popper"
                         class="list-2__icon list-2__icon_right">
+                </div>
+                <div class="list-card list-card_3">
+                    <img src="./assets/images/home-page/icons/twemoji-soft-ice-cream.svg" alt="ice-cream"
+                        class="list-3__icon">
+                    <h6>Top 10</h6>
+                    <h3>Science Fiction</h3>
+                </div>
+                <div class="list-card list-card_4">
+                    <img src="./assets/images/home-page/icons/twemoji-soft-ice-cream.svg" alt="ice-cream"
+                        class="list-4__icon">
+                    <h3>Most Popular Romance</h3>
                 </div>
             </div>
         </div>
@@ -129,7 +142,7 @@
                     <div class="book__author">Sally Rooney</div>
                 </div>
                 <div class="book">
-                    <a href="link" class="book__cover book__cover_link"><img
+                    <div class="book__cover book__cover_link"></div><a href="link"><img
                             src="./assets/images/home-page/covers/book2.svg" alt="The world doesn’t 
                     require you" class="book__cover book__cover_img"></a>
                     <div class="book__title">The world doesn’t
@@ -143,6 +156,20 @@
                     <div class="book__title">The last widow</div>
                     <div class="book__author">Karin Slaughter</div>
                 </div>
+                <div class="book">
+                    <a href="link" class="book__cover book__cover_link"><img
+                            src="./assets/images/home-page/covers/book4.svg" alt="Promising Young Women"
+                            class="book__cover book__cover_img"></a>
+                    <div class="book__title">Promising Young Women</div>
+                    <div class="book__author">Caroline O’Donoghue</div>
+                </div>
+                <div class="book">
+                    <a href="link" class="book__cover book__cover_link"><img
+                            src="./assets/images/home-page/covers/book5.svg" alt="Careers for Women"
+                            class="book__cover book__cover_img"></a>
+                    <div class="book__title">Careers for Women</div>
+                    <div class="book__author">Joanna Scott</div>
+                </div>
             </div>
         </div>
         <!--popular genres-->
@@ -152,42 +179,66 @@
             </div>
 
             <div class="pop-genre-wrapper">
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/general.svg"
-                        alt="General fiction" class="pop-genre__img"></a>
-                <div class="pop-genre__title">General Fiction</div>
-                <a href="link" class="pop-genre__link"> <img src="./assets/images/home-page/icons/crime.svg" alt="Crime"
-                        class="pop-genre__img"></a>
-                <div class="pop-genre__title">Crime</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/thriller.svg"
-                        alt="Thriller" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Thriller</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/romance.svg"
-                        alt="Romance" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Romance</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/travel.svg"
-                        alt="Travel" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Travel</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/sport.svg" alt="Sports"
-                        class="pop-genre__img"></a>
-                <div class="pop-genre__title">Sports</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/sci-fi.svg"
-                        alt="Science fiction" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Science Fiction</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/fantasy.svg"
-                        alt="Fantasy" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Fantasy</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/ya.svg"
-                        alt="Young adult" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Young Adult</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/children.svg"
-                        alt="Children's books" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Children's Books</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/classic.svg"
-                        alt="classics" class="pop-genre__img"></a>
-                <div class="pop-genre__title">classics</div>
-                <a href="link" class="pop-genre__link"><img src="./assets/images/home-page/icons/nature.svg"
-                        alt="Nature" class="pop-genre__img"></a>
-                <div class="pop-genre__title">Nature</div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/general.svg"
+                                alt="General fiction" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">General Fiction</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/crime.svg"
+                                alt="Crime" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Crime</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/thriller.svg"
+                                alt="Thriller" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Thriller</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/romance.svg"
+                                alt="Romance" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Romance</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/travel.svg"
+                                alt="Travel" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Travel</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/sport.svg"
+                                alt="Sports" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Sports</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/sci-fi.svg"
+                                alt="Science fiction" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Science Fiction</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/fantasy.svg"
+                                alt="Fantasy" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Fantasy</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/ya.svg"
+                                alt="Young adult" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Young Adult</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/children.svg"
+                                alt="Children's books" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Children's Books</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/classic.svg"
+                                alt="classics" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Сlassics</div>
+                </div>
+                <div class="pop-genre-card">
+                    <div class="pop-genre__link"><a href="link"><img src="./assets/images/home-page/icons/nature.svg"
+                                alt="Nature" class="pop-genre__img"></a></div>
+                    <div class="pop-genre__title">Nature</div>
+                </div>
             </div>
         </div>
     </main>
