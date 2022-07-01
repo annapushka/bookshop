@@ -6,6 +6,8 @@
 
 .avatar {
     margin: 0 auto;
+    width: 16vh;
+    max-width: 200px;
 }
 
 .title__wrap {
@@ -74,23 +76,20 @@
     color: #53889D;
 }
 
-.books-wrapper {
-    display: inline-block;
-    width: 100%;
-    min-height: 5rem;
-    overflow-x: scroll;
-    white-space: nowrap;
+.books-area {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-gap: 0.25rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    margin-bottom: 1rem;
+    max-width: 550px;
 }
 
-.books-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.book {
-    display: inline-block;
-    padding: 0 0 0 1.5rem;
+.book-frame {
+    filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
+    padding: 0.1rem;
+    max-width: 150px;
 }
 
 .link__wrap {
@@ -110,8 +109,6 @@
 
 .link__arrow {}
 
-.book__empty {}
-
 h6 {
     margin: 1em 0;
 }
@@ -120,6 +117,28 @@ p {
     margin: 1.5em 1em;
 }
 
-.favorite-genres__wrap, .books-type-title {
+.favorite-genres__wrap,
+.books-type-title {
     margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
