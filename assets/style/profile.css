@@ -2,12 +2,17 @@
     margin: 0 auto;
 }
 
-.avatar__circle {}
-
-.avatar {
-    margin: 0 auto;
+.avatar__circle {
     width: 16vh;
     max-width: 200px;
+    height: 16vh;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url("https://images.unsplash.com/photo-1514673645677-5162aa89f8d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMHdpdGglMjBoYXR8ZW58MHx8MHx8&w=1000&q=80") no-repeat;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title__wrap {
@@ -64,6 +69,7 @@
 
 }
 
+.books-box {}
 
 .books-type-title {
     display: flex;
