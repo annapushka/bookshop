@@ -2,20 +2,14 @@
     margin: 0 auto;
 }
 
-.avatar__circle {
+.avata {
     width: 16vh;
     max-width: 200px;
     height: 16vh;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    background: url("https://images.unsplash.com/photo-1514673645677-5162aa89f8d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMHdpdGglMjBoYXR8ZW58MHx8MHx8&w=1000&q=80") no-repeat;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    clip-path: ellipse(45% 45% at 50% 50%);
 }
 
-.title__wrap {
+.title {
     text-align: center;
 }
 
@@ -31,7 +25,7 @@
     color: #828282;
 }
 
-.follow-box__wrap {
+.wrap-follow-box {
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -56,13 +50,13 @@
     text-align: center;
 }
 
-.favorite-genres__wrap {
+.favorite-genres {
     padding-bottom: 1rem;
 }
 
 .favorite-genres__title {}
 
-.favorite-genres {
+.favorite-genres__box {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6em;
@@ -71,12 +65,12 @@
 
 .books-box {}
 
-.books-type-title {
+.books-box__title {
     display: flex;
     align-content: center;
 }
 
-.books-count-num {
+.books-box__num {
     font-size: 0.75em;
     color: #53889D;
 }
@@ -91,13 +85,14 @@
     max-width: 550px;
 }
 
-.book-frame {
+.books-area__frame {
     filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
     padding: 0.1rem;
     max-width: 150px;
+    transition: transform 6s;
 }
 
-.link__wrap {
+.wrap__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,8 +117,8 @@ p {
     margin: 1.5em 1em;
 }
 
-.favorite-genres__wrap,
-.books-type-title {
+.favorite-genres,
+.books-box__title {
     margin: 0 1.5rem;
 }
 
