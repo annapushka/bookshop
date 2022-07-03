@@ -1,0 +1,149 @@
+.avatar__wrap {
+    margin: 0 auto;
+}
+
+.avatar__circle {
+    width: 16vh;
+    max-width: 200px;
+    height: 16vh;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: url("https://images.unsplash.com/photo-1514673645677-5162aa89f8d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z2lybCUyMHdpdGglMjBoYXR8ZW58MHx8MHx8&w=1000&q=80") no-repeat;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title__wrap {
+    text-align: center;
+}
+
+.title__name {
+    line-height: 0.5em;
+}
+
+.title__location {
+    font-weight: 400;
+    font-size: 0.62em;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #828282;
+}
+
+.follow-box__wrap {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+}
+
+.follow-box {
+    padding-top: 0.7em;
+
+}
+
+.follow-box__title {
+    font-size: 0.62em;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.follow-box__number {
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.favorite-genres__wrap {
+    padding-bottom: 1rem;
+}
+
+.favorite-genres__title {}
+
+.favorite-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+
+}
+
+.books-box {}
+
+.books-type-title {
+    display: flex;
+    align-content: center;
+}
+
+.books-count-num {
+    font-size: 0.75em;
+    color: #53889D;
+}
+
+.books-area {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    display: grid;
+    grid-gap: 0.25rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    max-width: 550px;
+}
+
+.book-frame {
+    filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
+    padding: 0.1rem;
+    max-width: 150px;
+}
+
+.link__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    font-weight: 600;
+    font-size: 0.75em;
+    text-align: center;
+    color: #D96F6E;
+    text-decoration: underline;
+    padding-right: 0.4em;
+}
+
+.link__arrow {}
+
+h6 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 1.5em 1em;
+}
+
+.favorite-genres__wrap,
+.books-type-title {
+    margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

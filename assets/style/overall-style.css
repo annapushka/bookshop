@@ -3,9 +3,8 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
 body {
-    max-width: 87vw;
+    max-width: 100vw;
     height: 100vh;
-    margin: auto;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -48,23 +47,40 @@ h6 {
     color: #333333;
 }
 
+@media screen and(max-width:320px) {
+    .pop-genre__link {
+        max-width: 66px;
+        max-height: 66px;
+    }
+}
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
     body {
-        max-width: 80vw;
+        max-width: 600px;
+        margin: auto;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     body {
-        max-width: 60vw;
+        max-width: 600px;
+        margin: auto;
     }
 }
 
 @media screen and (min-width: 1280px) {
     body {
-        max-width: 45vw;
+        max-width: 600px;
+        margin: auto;
     }
+
+    .pop-genre-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    /*не работает*/
 }
+
 
 p {
     margin: 0;
@@ -123,11 +139,11 @@ img {
     background: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
 }
 
-.books-wrapper {
+/* .books-wrapper {
     width: 100%;
     min-height: 5rem;
     overflow-x: scroll;
-    white-space: nowrap;
+    white-space: nowrap; 
     margin-bottom: 1rem;
 }
 
@@ -138,7 +154,7 @@ img {
 
 .books-wrapper::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .book {
     display: flex;
@@ -159,7 +175,7 @@ img {
     line-height: 140%;
 }
 
-.book__autor {
+.book__author {
     font-weight: 400;
     font-size: 0.75em;
     color: #4F4F4F;
