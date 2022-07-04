@@ -46,41 +46,6 @@ h6 {
     color: #333333;
 }
 
-@media screen and(max-width:320px) {
-    .pop-genre__link {
-        max-width: 66px;
-        max-height: 66px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .pop-genre-wrapper {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    /*не работает*/
-}
-
-
 p {
     margin: 0;
     padding: 0;
@@ -101,7 +66,8 @@ img {
     max-width: 100%;
 }
 
-.genre {
+.genre,
+.book-card__link {
     width: fit-content;
     height: fit-content;
 
@@ -117,11 +83,13 @@ img {
     border-radius: 0.5rem;
 }
 
-.genre_blue-baby {
+.genre_blue-baby,
+.book-card__link_read {
     background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
 }
 
-.genre_pink-blush {
+.genre_pink-blush,
+.book-card__link_buy {
     background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
 }
 
@@ -162,7 +130,8 @@ img {
     max-width: 150px;
 }
 
-.book__cover {
+.book__cover,
+.book-card__cover {
     max-width: 100%;
 }
 
@@ -185,4 +154,99 @@ img {
     font-size: 0.75em;
     color: #D96F6E;
     line-height: 140%;
+}
+
+/*для карточек купленных или желаемых книг*/
+.purchased-books {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    min-width: 300px;
+    min-height: 120px;
+
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+
+    box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);
+}
+
+.book-card__cover {
+    grid-column: 1;
+    grid-row: 1/4;
+
+    margin: 1rem;
+}
+
+.book-card__title {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: start;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+
+    line-height: 140%;
+}
+
+.book-card__author {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: start;
+
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+
+    color: #4F4F4F;
+}
+
+.book-card__link {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+@media screen and (max-width:320px) {
+    .pop-genre__link {
+        max-width: 66px;
+        max-height: 66px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .pop-genre-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /*не работает*/
 }
