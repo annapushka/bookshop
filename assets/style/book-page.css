@@ -33,6 +33,7 @@ main {
 
 .book-page__description {
     line-height: 1.5rem;
+    letter-spacing: 0.08rem
 }
 
 .link {
@@ -44,7 +45,7 @@ main {
     flex-direction: column;
     align-items: stretch;
     gap: 0.5em;
-    width: 50%;
+    width: 60%;
     margin: 1.4rem auto;
 }
 
@@ -53,6 +54,7 @@ main {
     height: 3em;
     text-transform: uppercase;
     color: white;
+    font-weight: 600;
     border: none;
     border-radius: 0.5em;
 }
@@ -64,3 +66,14 @@ main {
 .buttons__wishlist {
     background-color: #F3A492;
 }
+
+.publishing {
+    color: #828282;
+    margin: 1rem auto;
+}
+
+.book-genres {
+    disss
+}
+
+<div class="book-genres__title">Genres:</div><div class="genre genre_yellow-pink">Contemporary</div><div class="genre genre_blue-baby">General Fiction</div>
