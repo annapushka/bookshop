@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/overall-style.css">
+    <link rel="stylesheet" href="assets/style/profile.css">
+    <link rel="stylesheet" href="assets/style/registration.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="form-wrapper">
+            <form onsubmit="return false" class="form">
+                <div class="form__title">
+                    <h6>Log in to your profile</h6>
+                </div>
+                <div class="form__item">
+                    <input type="email" class="form__imput" id="email" placeholder="Email">
+                </div>
+                <div class="form__item">
+                    <input type="password" class="form__imput" id="password" placeholder="Password">
+                </div>
+                <div id="message"></div>
+                <button onclick="checkPassword()" type="submit" class="form__btn genre genre_blush-yellow">Log-in</button>
+                <div class="form__note">
+                    <div>
+                        Don't have a profile yet?
+                    </div>
+                    <div>
+                        <a class="link link_m" href="registration.html">Register now</a>
+                        <img src="assets/images/profile/link-arrow.svg" alt="link" class="link__arrow">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/src/sign-in.js"></script>
+    <script></script>
+</body>
+
+</html>
