@@ -1,1 +1,66 @@
-.main {}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.book-page__cover {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+
+}
+
+.book-page {
+    text-align: center;
+}
+
+.book-page__title {
+    margin: 0 auto 0.3rem;
+}
+
+.book-page__type {
+    color: #828282;
+    font-size: 0.75em;
+    margin: 0.3em auto;
+}
+
+.book-page__price {
+    margin: 1rem auto;
+}
+
+.book-page__description {
+    line-height: 1.5rem;
+}
+
+.link {
+    color: #53889D;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+    width: 50%;
+    margin: 1.4rem auto;
+}
+
+.buttons__cart,
+.buttons__wishlist {
+    height: 3em;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.buttons__cart {
+    background-color: #D96F6E
+}
+
+.buttons__wishlist {
+    background-color: #F3A492;
+}
