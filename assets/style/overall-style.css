@@ -56,21 +56,21 @@ h6 {
 @media screen and (min-width: 480px) and (max-width: 768px) {
     body {
         max-width: 600px;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     body {
         max-width: 600px;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 1280px) {
     body {
         max-width: 600px;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .pop-genre-wrapper {
