@@ -2,13 +2,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .book-page__cover {
     display: flex;
-    flex: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
 
 }
@@ -22,9 +24,11 @@ main {
 }
 
 .book-page__type {
-    color: #828282;
-    font-size: 0.75em;
     margin: 0.3em auto;
+
+    font-size: 0.75em;
+
+    color: #828282;
 }
 
 .book-page__price {
@@ -45,18 +49,24 @@ main {
     flex-direction: column;
     align-items: stretch;
     gap: 0.5em;
+
     width: 60%;
+
     margin: 1.4rem auto;
 }
 
 .buttons__cart,
 .buttons__wishlist {
     height: 3em;
-    text-transform: uppercase;
-    color: white;
+
     font-weight: 600;
+
+    text-transform: uppercase;
+
     border: none;
     border-radius: 0.5em;
+
+    color: white;
 }
 
 .buttons__cart {
@@ -68,22 +78,27 @@ main {
 }
 
 .publishing {
-    color: #828282;
     margin: 1rem auto;
+
+    color: #828282;
 }
 
 .book-genres {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    width: fit-content;
     justify-items: stretch;
+
+    width: fit-content;
+
 }
 
 .book-genres__title {
-    text-align: center;
     grid-area: 1/1/2/3;
     font-weight: 700;
+
+    text-align: center;
+
     color: #4F4F4F
 }
 
@@ -99,13 +114,16 @@ main {
     display: grid;
     grid-template-rows: 30% 70%;
     grid-template-columns: repeat(5, 1fr);
+
     margin-top: 2rem;
 }
 
 .share__title {
-    text-align: center;
     grid-area: 1/1/2/6;
     font-weight: 700;
+
+    text-align: center;
+
     color: #4F4F4F
 }
 
@@ -114,5 +132,18 @@ main {
 }
 
 .books-type-title {
+    margin-left: 1.5rem;
+}
+
+.books-wrapper {
+    width: 100%;
+    min-height: 5rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.books-line {
+    display: flex;
     margin-left: 1.5rem;
 }

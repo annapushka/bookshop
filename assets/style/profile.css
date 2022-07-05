@@ -6,6 +6,7 @@
     width: 16vh;
     max-width: 200px;
     height: 16vh;
+
     clip-path: ellipse(45% 45% at 50% 50%);
 }
 
@@ -18,8 +19,9 @@
 }
 
 .title__location {
-    font-weight: 400;
     font-size: 0.62em;
+    font-weight: 400;
+
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: #828282;
@@ -29,6 +31,7 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
+
     margin-bottom: 1rem;
 }
 
@@ -44,8 +47,9 @@
 }
 
 .follow-box__number {
-    font-weight: 700;
     font-size: 1.25em;
+    font-weight: 700;
+
     line-height: 1.8em;
     text-align: center;
 }
@@ -63,8 +67,6 @@
 
 }
 
-.books-box {}
-
 .books-box__title {
     display: flex;
     align-content: center;
@@ -72,23 +74,44 @@
 
 .books-box__num {
     font-size: 0.75em;
+
     color: #53889D;
 }
 
+.books-wrapper {
+    width: 100%;
+    min-height: 5rem;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.books-line {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.books-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
 .books-area {
-    margin: 0 1.5rem 1.5rem 1.5rem;
     display: grid;
-    grid-gap: 0.25rem;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.25rem;
     justify-content: center;
+
     max-width: 550px;
+
+    margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .books-area__frame {
-    filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
-    padding: 0.1rem;
     max-width: 150px;
+    padding: 0.1rem;
+
+    filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
     transition: transform 6s;
 }
 
@@ -99,12 +122,14 @@
 }
 
 .link {
-    font-weight: 600;
-    font-size: 0.75em;
-    text-align: center;
-    color: #D96F6E;
-    text-decoration: underline;
     padding-right: 0.4em;
+
+    font-size: 0.75em;
+    font-weight: 600;
+
+    text-align: center;
+    text-decoration: underline;
+    color: #D96F6E;
 }
 
 .link__arrow {}
@@ -120,25 +145,4 @@ p {
 .favorite-genres,
 .books-box__title {
     margin: 0 1.5rem;
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
 }
