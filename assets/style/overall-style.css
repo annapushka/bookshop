@@ -116,18 +116,20 @@ img {
 .books-line {
     display: flex;
     margin-left: 1.5rem;
-}
+} */
 
 .books-wrapper::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .book {
     display: flex;
     flex-direction: column;
-    margin-right: 0.7rem;
-    min-width: 130px;
+    
+    min-width: 135px;
     max-width: 150px;
+
+    margin-right: 0.7rem;
 }
 
 .book__cover,

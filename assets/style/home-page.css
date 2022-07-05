@@ -32,7 +32,6 @@ span {
 .list-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 16px;
 
     min-width: 100%;
@@ -61,7 +60,7 @@ span {
 .list-card_2 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 0.5fr;
 
     justify-items: center;
     align-items: center;
@@ -126,7 +125,7 @@ h2 {
 }
 
 .list-card__title_center {
-  /*   margin: 0px; */
+    margin: 0px;
 
     color: #D96F6E;
 }
@@ -134,9 +133,11 @@ h2 {
 .list-card__title_top,
 .list-card__title_bottom {
     font-family: 'Playfair Display', sans-serif;
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-style: normal;
     font-weight: 700;
+
+    margin: 0px;
 
     background-image: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
     -webkit-background-clip: text;
@@ -145,7 +146,6 @@ h2 {
 
 .list-card__title_top {
     align-self: end;
-    
 }
 
 .list-card__title_bottom {
@@ -190,10 +190,6 @@ h2 {
 
     text-align: left;
     overflow-x: scroll;
-}
-
-.books-wrapper::-webkit-scrollbar {
-    display: none;
 }
 
 /*popular genres*/
