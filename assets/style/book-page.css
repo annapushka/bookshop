@@ -67,6 +67,15 @@ main {
     border-radius: 0.5em;
 
     color: white;
+
+    transition: 0.5s;
+}
+
+.buttons__cart:hover,
+.buttons__wishlist:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.37),
+    inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
 .buttons__cart {
