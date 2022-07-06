@@ -70,8 +70,6 @@ span {
 
 .list-card_1 {
     background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
-
-    /* background-image: url("../images/home-page/Vector.svg"); */
 }
 
 .list-card_3 {
@@ -92,7 +90,10 @@ h6,
     margin-bottom: 0px;
     margin-left: 1rem
 }
-
+/* .list-card__background{
+    
+    z-index: 1;
+} */
 h2 {
     align-self: center;
     margin: 0px;
@@ -121,6 +122,7 @@ h2 {
 
 .list-card__title_sm-white,
 .list-card__title_lg-white {
+    z-index: 2;
     color: #ffffff;
 }
 
