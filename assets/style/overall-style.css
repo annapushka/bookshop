@@ -60,6 +60,7 @@ ol {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 img {
@@ -67,7 +68,8 @@ img {
 }
 
 .genre,
-.book-card__link {
+.book-card__link,
+.book-card__btn {
     width: fit-content;
     height: fit-content;
 
@@ -80,16 +82,18 @@ img {
     color: #FFFFFF;
 
     background-color: #333333;
+    border: 0px;
     border-radius: 0.5rem;
 }
 
 .genre_blue-baby,
-.book-card__link_read {
+.book-card__btn_buy,
+.book-card__btn_add {
     background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
 }
 
 .genre_pink-blush,
-.book-card__link_buy {
+.book-card__btn_read {
     background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
 }
 
@@ -125,7 +129,7 @@ img {
 .book {
     display: flex;
     flex-direction: column;
-    
+
     min-width: 135px;
     max-width: 150px;
 
@@ -213,18 +217,26 @@ img {
     color: #4F4F4F;
 }
 
-.book-card__link {
+.book-card__btn_buy,
+.book-card__btn_read {
     grid-column: 3/4;
     grid-row: 3/4;
+}
+
+.book-card__btn_add {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: end;
 }
 
 /*анимация кнопок при нажатии*/
 
 .buttons__cart:hover,
-.buttons__wishlist:hover {
+.buttons__wishlist:hover,
+.book-card__btn:hover {
     transform: scale(1.05);
     box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.37),
-    inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+        inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
 @media screen and (max-width:320px) {
