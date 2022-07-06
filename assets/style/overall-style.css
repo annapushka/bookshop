@@ -248,100 +248,97 @@ img {
         inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
-/*медиа запросы*/
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    /*шапка, подвал*/
+/*шапка, подвал*/
 
-    .box-footer-button,
-    .box-header {
-        display: flex;
-        justify-content: space-around;
-        height: fit-content;
-        box-shadow: 0px -2px 16px rgba(78, 55, 55, 0.1);
-        width: 100%;
-    }
+.box-footer-button,
+.box-header {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    box-shadow: 0px -2px 16px rgba(78, 55, 55, 0.1);
+    width: 100%;
+}
 
-    .box-header {
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
-    }
+.box-header {
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
+}
 
-    .box-header-buttons {
-        display: flex;
-        margin: 0 1.5rem;
-        gap: 2rem;
-    }
+.box-header-buttons {
+    display: flex;
+    margin: 0 1.5rem;
+    gap: 2rem;
+}
 
-    .box-header__title {
-        margin: 0 1.5rem;
-    }
+.box-header__title {
+    margin: 0 1.5rem;
+}
 
-    .footer-button {
-        color: #BBD1D9;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 0.7rem 0;
-    }
+.footer-button {
+    color: #BBD1D9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0.7rem 0;
+}
 
-    .footer-button:hover,
-    .footer-button:focus,
-    .footer-button_active {
-        filter: invert(2) sepia(2) saturate(4) hue-rotate(145deg) brightness(140%) contrast(50%);
-    }
+.footer-button:hover,
+.footer-button:focus,
+.footer-button_active {
+    filter: invert(2) sepia(2) saturate(4) hue-rotate(145deg) brightness(140%) contrast(50%);
+}
 
-    .footer-button__title {
-        font-size: 0.625em;
-    }
+.footer-button__title {
+    font-size: 0.625em;
+}
 
-    .search__icon {
-        display: inline-block;
-        position: relative;
-    }
+.search__icon {
+    display: inline-block;
+    position: relative;
+}
 
-    .search__icon:after {
-        content: "";
-        background: #53889D;
-        width: 0.18rem;
-        height: 0.6rem;
-        position: absolute;
-        top: 1.1rem;
-        right: -0.1rem;
-        transform: rotate(135deg);
-    }
+.search__icon:after {
+    content: "";
+    background: #53889D;
+    width: 0.18rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 1.1rem;
+    right: -0.1rem;
+    transform: rotate(135deg);
+}
 
-    .search__input {
-        color: #53889D;
-        font-size: 0.6em;
-        background: transparent;
-        width: 0.3em;
-        height: 0.3em;
-        padding: 0.4rem;
-        border: solid 0.18rem #53889D;
-        outline: none;
-        border-radius: 2rem;
-        transition: width 0.5s;
-    }
+.search__input {
+    color: #53889D;
+    font-size: 0.6em;
+    background: transparent;
+    width: 0.3em;
+    height: 0.3em;
+    padding: 0.4rem;
+    border: solid 0.18rem #53889D;
+    outline: none;
+    border-radius: 2rem;
+    transition: width 0.5s;
+}
 
-    .search__input::placeholder {
-        color: #333333;
-        opacity: 0;
-        transition: opacity 150ms ease-out;
-    }
+.search__input::placeholder {
+    color: #333333;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
 
-    .search__input:focus::placeholder {
-        opacity: 1;
-    }
+.search__input:focus::placeholder {
+    opacity: 1;
+}
 
-    .search__input:focus,
-    .search__input:not(:placeholder-shown) {
-        width: 8rem;
-    }
+.search__input:focus,
+.search__input:not(:placeholder-shown) {
+    width: 8rem;
+}
 
-    .header-button__img {
-        min-height: 1.5rem;
-    }
+.header-button__img {
+    min-height: 1.5rem;
 }
 
 @media screen and (max-width:320px) {
@@ -365,7 +362,7 @@ img {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 769px) and (max-width: 1279px) {
     body {
         max-width: 600px;
         margin: 0 auto;
@@ -377,12 +374,6 @@ img {
 
     .book-card__author {
         font-size: 1em;
-    }
-
-    .pop-genre-wrapper {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        margin-right: 0px;
     }
 
     .footer-button {
@@ -410,7 +401,6 @@ img {
     .pop-genre-wrapper {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin-right: 0px;
     }
 
     .footer-button {
