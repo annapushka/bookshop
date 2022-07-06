@@ -141,7 +141,7 @@ img {
     margin-right: 0.7rem;
 }
 
-.book__cover,
+.book__cover, .books-area__cover,
 .book-card__cover {
     max-width: 100%;
 }
