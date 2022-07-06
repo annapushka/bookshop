@@ -16,6 +16,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -109,20 +110,24 @@ img {
     background: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
 }
 
-/* .books-wrapper {
+.books-wrapper {
     width: 100%;
     min-height: 5rem;
     overflow-x: scroll;
-    white-space: nowrap; 
+    /* white-space: nowrap;  */
     margin-bottom: 1rem;
 }
 
-.books-line {
+.books-line,
+.authors-line,
+.list-line {
     display: flex;
     margin-left: 1.5rem;
-} */
+}
 
-.books-wrapper::-webkit-scrollbar {
+.books-wrapper::-webkit-scrollbar,
+.authors-wrapper::-webkit-scrollbar,
+.list-wrapper::-webkit-scrollbar {
     display: none;
 }
 
@@ -230,7 +235,6 @@ img {
 }
 
 /*анимация кнопок при нажатии*/
-
 .buttons__cart:hover,
 .buttons__wishlist:hover,
 .book-card__btn:hover {
@@ -239,21 +243,15 @@ img {
         inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
-@media screen and (max-width:320px) {
-    .pop-genre__link {
-        max-width: 66px;
-        max-height: 66px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
+/*медиа запросы*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
     body {
         max-width: 600px;
         margin: 0 auto;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     body {
         max-width: 600px;
         margin: 0 auto;
@@ -265,6 +263,12 @@ img {
 
     .book-card__author {
         font-size: 1em;
+    }
+
+    .pop-genre-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-right: 0px;
     }
 }
 
@@ -285,7 +289,6 @@ img {
     .pop-genre-wrapper {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        margin-right: 0px;
     }
-
-    /*не работает*/
 }
