@@ -9,10 +9,9 @@ In addition to the main page, where books are presented, there is a full-fledged
 A small functionality for registering new users has also been made.
 
 ## Technology stack
-<p style="display:flex; align-items: center; width: 3rem;"><img src="assets\images\HTML.svg" alt="HTML"/>
-<img src="assets\images\CSS.svg" alt="CSS"/>
-<img src="assets\images\JS.svg" alt="JS"/>
-<img src="assets\images\Figma.svg" alt="Figma"/></p>
+<p><img src="assets\images\HTML.png" alt="HTML"/>
+<img src="assets\images\CSS.png" alt="CSS"/>
+<img src="assets\images\JS.png" alt="JS"/></p>
 
 ## Result
 
