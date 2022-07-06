@@ -1,6 +1,6 @@
 # Book Shop
 
-Small but very cozy e-book store.
+Small but very cozy e-book store:)
 
 ## Description
 
@@ -20,8 +20,6 @@ A small functionality for registering new users has also been made.
 
 
 ## Authors
-
-Contributors names and contact info
 
 Pushkareva Anna<br>
 [@AnnaPushka](https://github.com/annapushka)
