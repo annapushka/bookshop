@@ -1,6 +1,6 @@
 # Book Shop
 
-Small but very cozy e-book store.
+Small but very cozy e-book store:)
 
 ## Description
 
@@ -9,37 +9,27 @@ In addition to the main page, where books are presented, there is a full-fledged
 A small functionality for registering new users has also been made.
 
 ## Technology stack
+<p><img src="assets\images\HTML.png" alt="HTML" width="100rem"/>
+<img src="assets\images\CSS.png" alt="CSS" width="100rem"/>
+<img src="assets\images\JS.png" alt="JS" width="100rem"/></p>
 
-<img src="assets\images\HTML.svg" alt="HTML"/>
-<img src="assets\images\assets\images\CSS.svg" alt="CSS"/>
-<img src="assets\images\JS.svg" alt="JS"/>
-<img src="assets\images\Figma.svg" alt="Figma"/>
+## Result
 
-### Result
+<p><img src="assets\images\bookshop-result1.gif" alt="bookshop-result"/>
+<img src="assets\images\bookshop-result2.gif" alt="bookshop-result"/></p>
 
-<img src="assets\images\bookshop-result1.gif" alt="bookshop-result"/>
-<img src="assets\images\bookshop-result2.gif" alt="bookshop-result"/>
-```
 
 ## Authors
 
-Contributors names and contact info
-
-Pushkareva Anna  
+Pushkareva Anna<br>
 [@AnnaPushka](https://github.com/annapushka)
 
-Mariya Zeleneva 
+Mariya Zeleneva<br>
 [@MZ-87](https://github.com/MZ-87)
 
-Darina Bebenina
+Darina Bebenina<br>
 [@Darina44](https://github.com/Darina44)
 
-Galina
+Galina<br>
 [@Galinapru](https://github.com/Galinapru)
 
-```
-
-## Version History
-
-* 0.1
-    * Initial Release
