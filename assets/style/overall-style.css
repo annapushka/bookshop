@@ -279,6 +279,10 @@ img {
     margin: 0 1.5rem;
 }
 
+.box-header__img{
+    margin: 0.7rem;
+}
+
 .footer-button {
     color: #BBD1D9;
     display: flex;

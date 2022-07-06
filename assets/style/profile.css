@@ -58,8 +58,6 @@
     padding-bottom: 1rem;
 }
 
-.favorite-genres__title {}
-
 .favorite-genres__box {
     display: flex;
     flex-wrap: wrap;
