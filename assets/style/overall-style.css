@@ -22,7 +22,11 @@ main {
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex: 1;
-    overflow: auto;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }
 
 h1,
