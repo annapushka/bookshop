@@ -16,13 +16,12 @@
 }
 
 .form__item {
-    margin: 0.8rem auto;
+    margin: 0.5rem auto;
     padding: 0 1.3rem;
-
 }
 
 .form__imput {
-    width: 18rem;
+    width: 15rem;
     height: 2rem;
     background: #FFFFFF;
     box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);

@@ -18,10 +18,15 @@ body {
 main {
     display: flex;
     flex-direction: column;
+
     padding-top: 2rem;
     padding-bottom: 2rem;
     flex: 1;
-    overflow: auto;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }
 
 h1,
@@ -64,6 +69,7 @@ ol {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 img {
@@ -71,7 +77,8 @@ img {
 }
 
 .genre,
-.book-card__link {
+.book-card__link,
+.book-card__btn {
     width: fit-content;
     height: fit-content;
 
@@ -84,16 +91,18 @@ img {
     color: #FFFFFF;
 
     background-color: #333333;
+    border: 0px;
     border-radius: 0.5rem;
 }
 
 .genre_blue-baby,
-.book-card__link_read {
+.book-card__btn_buy,
+.book-card__btn_add {
     background: linear-gradient(90deg, #53889D 0%, #BBD1D9 100%);
 }
 
 .genre_pink-blush,
-.book-card__link_buy {
+.book-card__btn_read {
     background: linear-gradient(90deg, #F3A492 0%, #D96F6E 100%), #C4C4C4;
 }
 
@@ -109,20 +118,24 @@ img {
     background: linear-gradient(90deg, #D96F6E 0%, #F2D05C 100%);
 }
 
-/* .books-wrapper {
+.books-wrapper {
     width: 100%;
     min-height: 5rem;
     overflow-x: scroll;
-    white-space: nowrap; 
+    /* white-space: nowrap;  */
     margin-bottom: 1rem;
 }
 
-.books-line {
+.books-line,
+.authors-line,
+.list-line {
     display: flex;
     margin-left: 1.5rem;
-} */
+}
 
-.books-wrapper::-webkit-scrollbar {
+.books-wrapper::-webkit-scrollbar,
+.authors-wrapper::-webkit-scrollbar,
+.list-wrapper::-webkit-scrollbar {
     display: none;
 }
 
@@ -218,15 +231,22 @@ img {
     color: #4F4F4F;
 }
 
-.book-card__link {
+.book-card__btn_buy,
+.book-card__btn_read {
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
-/*анимация кнопок при нажатии*/
+.book-card__btn_add {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: end;
+}
 
+/*анимация кнопок при нажатии*/
 .buttons__cart:hover,
-.buttons__wishlist:hover {
+.buttons__wishlist:hover,
+.book-card__btn:hover {
     transform: scale(1.05);
     box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.37),
         inset 0px 4px 16px rgba(255, 255, 255, 0.503);
@@ -234,7 +254,8 @@ img {
 
 /*шапка, подвал*/
 
-.box-footer-button, .box-header {
+.box-footer-button,
+.box-header {
     display: flex;
     justify-content: space-around;
     height: fit-content;
@@ -248,13 +269,13 @@ img {
     box-shadow: 0px 4px 16px rgba(78, 55, 55, 0.15);
 }
 
-.box-header-buttons{
+.box-header-buttons {
     display: flex;
     margin: 0 1.5rem;
     gap: 2rem;
 }
 
-.box-header__title{
+.box-header__title {
     margin: 0 1.5rem;
 }
 
@@ -267,7 +288,8 @@ img {
 }
 
 .footer-button:hover,
-.footer-button:focus, .footer-button_active {
+.footer-button:focus,
+.footer-button_active {
     filter: invert(2) sepia(2) saturate(4) hue-rotate(145deg) brightness(140%) contrast(50%);
 }
 
@@ -278,9 +300,9 @@ img {
 .search__icon {
     display: inline-block;
     position: relative;
-  }
-  
-  .search__icon:after {
+}
+
+.search__icon:after {
     content: "";
     background: #53889D;
     width: 0.18rem;
@@ -289,9 +311,9 @@ img {
     top: 1.1rem;
     right: -0.1rem;
     transform: rotate(135deg);
-  } 
-  
-  .search__input{
+}
+
+.search__input {
     color: #53889D;
     font-size: 0.6em;
     background: transparent;
@@ -302,26 +324,26 @@ img {
     outline: none;
     border-radius: 2rem;
     transition: width 0.5s;
-  }
-  
-  .search__input::placeholder {
+}
+
+.search__input::placeholder {
     color: #333333;
     opacity: 0;
     transition: opacity 150ms ease-out;
-  }
-  
-  .search__input:focus::placeholder {
-    opacity: 1;
-  }
-  
-  .search__input:focus,
-  .search__input:not(:placeholder-shown) {
-    width: 8rem;
-  }
+}
 
-  .header-button__img{
+.search__input:focus::placeholder {
+    opacity: 1;
+}
+
+.search__input:focus,
+.search__input:not(:placeholder-shown) {
+    width: 8rem;
+}
+
+.header-button__img {
     min-height: 1.5rem;
-  }
+}
 
 @media screen and (max-width:320px) {
     .pop-genre__link {
@@ -391,6 +413,4 @@ img {
         align-items: center;
         gap: 1rem;
     }
-
-    /*не работает*/
 }
