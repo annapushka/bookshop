@@ -100,8 +100,6 @@
     grid-gap: 0.25rem;
     justify-content: center;
 
-    max-width: 550px;
-
     margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
@@ -110,7 +108,6 @@
     padding: 0.1rem;
 
     filter: drop-shadow(1px 1px 10px rgba(78, 55, 55, 0.2));
-    transition: transform 6s;
 }
 
 .wrap__link {
