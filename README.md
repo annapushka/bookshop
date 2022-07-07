@@ -15,6 +15,7 @@ A small functionality for registering new users has also been made.
 
 ## Result
 
+[Сlick me](https://annapushka.github.io/bookshop/)
 <p><img src="assets\images\bookshop-result1.gif" alt="bookshop-result"/>
 <img src="assets\images\bookshop-result2.gif" alt="bookshop-result"/></p>
 
